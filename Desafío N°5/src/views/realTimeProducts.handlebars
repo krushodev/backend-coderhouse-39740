@@ -1,0 +1,59 @@
+<div>
+    <h1>Productos en tiempo real</h1>
+    <div>
+        <h2>Productos:</h2>
+        <div>
+            <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Categoría</th>
+                    <th>ID</th>
+                </tr>
+            </thead>
+            <tbody id="productsTable">
+            {{#each products}}
+                <tr id="product-{{this.id}}">
+                    <td>{{this.title}}</td>
+                    <td>{{this.price}}</td>
+                    <td>{{this.stock}}</td>
+                    <td>{{this.category}}</td>
+                    <td>{{this.id}}</td>
+                </tr>
+            {{/each}}
+            </tbody>
+        </table>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>
+<script>
+    const socket = io();
+    const tableBody = document.getElementById("productsTable");
+
+    socket.on("addProduct", (product) => {
+        const newRow = document.createElement("tr");
+        newRow.innerHTML =  `
+            <td>${product.title}</td>
+            <td>${product.price}</td>
+            <td>${product.stock}</td>
+            <td>${product.category}</td>
+            <td>${product.id}</td>`;
+
+        newRow.setAttribute("id", `product-${product.id}`)
+
+        tableBody.appendChild(newRow);
+    });
+
+    socket.on("deleteProduct", (productId) => {
+        const product = document.getElementById(`product-${productId}`);
+
+        console.log('Producto eliminado', product)
+
+        product.remove();
+    });
+</script>

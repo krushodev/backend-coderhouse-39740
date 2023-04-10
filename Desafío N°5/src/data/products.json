@@ -1,0 +1,134 @@
+[
+  {
+    "title": "Producto1",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "price": 100,
+    "thumbnails": "image.png",
+    "code": "nwdIVcfVau",
+    "category": "Category1",
+    "status": true,
+    "stock": 4,
+    "id": 1
+  },
+  {
+    "title": "Producto2",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "price": 100,
+    "thumbnails": "image.png",
+    "category": "Category5",
+    "code": "jRHyUoCzKA",
+    "status": true,
+    "stock": 10,
+    "id": 2
+  },
+  {
+    "title": "Producto3",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "price": 100,
+    "thumbnails": "image.png",
+    "category": "Category3",
+    "code": "4LP5tLxRAJ",
+    "status": true,
+    "stock": 8,
+    "id": 3
+  },
+  {
+    "title": "Producto4",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "price": 100,
+    "thumbnails": "image.png",
+    "category": "Category3",
+    "code": "DYUEBhRozw",
+    "status": true,
+    "stock": 4,
+    "id": 4
+  },
+  {
+    "title": "Producto5",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "price": 100,
+    "thumbnails": "image.png",
+    "category": "Category4",
+    "code": "ytctceTnto",
+    "status": true,
+    "stock": 5,
+    "id": 5
+  },
+  {
+    "title": "Producto6",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "price": 100,
+    "thumbnails": "image.png",
+    "category": "Category6",
+    "code": "vZI07BbYdb",
+    "status": true,
+    "stock": 18,
+    "id": 6
+  },
+  {
+    "title": "Producto7",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "price": 100,
+    "thumbnails": "image.png",
+    "category": "Category1",
+    "code": "8vTrz9x0BC",
+    "status": true,
+    "stock": 12,
+    "id": 7
+  },
+  {
+    "title": "Producto8",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "price": 100,
+    "thumbnails": "image.png",
+    "category": "Category2",
+    "code": "x8U6X17CuC",
+    "status": true,
+    "stock": 3,
+    "id": 8
+  },
+  {
+    "title": "Producto9",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "price": 100,
+    "thumbnails": "image.png",
+    "category": "Category10",
+    "code": "I3CtEGwWba",
+    "status": true,
+    "stock": 4,
+    "id": 9
+  },
+  {
+    "title": "Producto10",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "price": 100,
+    "thumbnails": "image.png",
+    "category": "Category6",
+    "code": "vyEzyk9z5p",
+    "status": true,
+    "stock": 13,
+    "id": 10
+  },
+  {
+    "title": "Producto11",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "price": 100,
+    "thumbnails": "image.png",
+    "stock": 10,
+    "category": "Category2",
+    "status": true,
+    "code": "59E0OWnNYz",
+    "id": 11
+  },
+  {
+    "title": "Producto12",
+    "price": 100,
+    "stock": 49,
+    "category": "Category7",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "code": "9qiD9PaBuJ",
+    "status": true,
+    "thumbnails": "image.png",
+    "id": 12
+  }
+]
