@@ -15,7 +15,6 @@ const httpServer = app.listen(8080, () => {
 const socketServer = new Server(httpServer);
 
 socketServer.on("connection", (socket) => {
-
     console.log('Usuario conectado')
 })
 
@@ -30,6 +29,4 @@ app.set("io", socketServer);
 
 app.use("/static", express.static(resolve("src/public")))
 
-app.use("/api/products", productsRouter);
-app.use("/api/carts", cartRouter);
 app.use("/", viewsRouter);
