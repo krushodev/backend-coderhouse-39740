@@ -1,0 +1,40 @@
+import { UserModel } from "../../models/users.model.js";
+
+class UsersMongooseDao {
+    async findOne(id) {
+        const userDocument = await UserModel.findById(id);
+
+        return {
+            id: userDocument._id,
+            firstName: userDocument.firstName,
+            lastName: userDocument.lastName,
+            email: userDocument.email,
+            age: userDocument.age,
+            password: userDocument.password,
+        };
+    }
+
+    async findByEmail(email) {
+        const userDocument = await UserModel.findOne({ email });
+
+        if (!userDocument?._id) throw new Error("Usuario no encontrado");
+
+        return {
+            id: userDocument._id,
+            firstName: userDocument.firstName,
+            lastName: userDocument.lastName,
+            email: userDocument.email,
+            age: userDocument.age,
+            password: userDocument.password,
+        };
+    }
+
+    async insertOne(user) {
+        const newUserDocument = new UserModel(user);
+        newUserDocument.save();
+
+        return true;
+    }
+}
+
+export default UsersMongooseDao;
